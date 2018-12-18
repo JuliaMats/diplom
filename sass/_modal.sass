@@ -1,0 +1,77 @@
+.modal
+    position: fixed
+    width: 100%
+    height: 100%
+    background-color: rgba(#000, 0.52)
+    left: 0
+    top: 0
+    z-index: 99
+    &_visible
+        display: flex
+    &_hidden
+        display: none
+    
+    &__dialog
+        margin: auto
+        width: 60%
+        height: 674px
+        background-color: #fff
+        display: flex
+        justify-content: center
+        position: relative
+    &__close
+        position: absolute
+        top: 10px
+        right: 10px
+        &:hover
+            cursor: pointer
+    &-form
+        text-align: center
+        width: 50%
+        padding-top: 59px
+        margin-bottom: 76px
+        &__input
+            width: 370px
+            height: 65px
+            width: 370px
+            margin-bottom: 15px
+            outline: none
+        &__button
+            margin-top: 15px
+            width: 368px
+            margin-bottom: 33px
+        &__phone
+            font-size: 24px
+            font-weight: 700
+            text-decoration: none
+            color: #000000
+            margin-top: 13px
+            margin-bottom: 76px
+        &__descr
+            text-align: center
+        &__txt
+            padding-bottom: 13px
+        &_phone
+            margin-bottom: 76px
+    
+.form
+    &-wrap
+        display: inline-block
+        padding: 0
+    &__title
+        text-align: center
+        font-size: 22px
+        font-weight: 400
+        line-height: 33px
+        margin-bottom: 45px
+        margin-top: 10px
+    &__subtitle
+        text-align: center
+        font-size: 16px
+        font-weight: 400
+        line-height: 35px
+        margin-bottom: 40px
+.items
+    width: 100%
+    &-name
+        margin-top: 40px
