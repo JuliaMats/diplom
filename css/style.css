@@ -202,20 +202,24 @@ label {
         font-weight: 700; }
 
 .input {
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 300;
   width: 260px;
   height: 50px;
   border: 1px solid #e8e8e8;
   margin-bottom: 15px;
-  text-align: center; }
+  text-align: center;
+  outline: none; }
 
 .button {
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 300;
   width: 260px;
   height: 60px;
   background-color: #23bac1;
   text-decoration: none;
   color: #ffffff;
   font-size: 15px;
-  font-weight: 400;
   text-transform: uppercase;
   padding: 0;
   outline: none;
@@ -248,10 +252,10 @@ label {
 .types-items {
   position: relative;
   width: 32%;
-  height: 680px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 140px;
   margin-bottom: 30px; }
   .types-items:hover {
     box-shadow: 0 5px 32px rgba(0, 0, 0, 0.1);
@@ -286,6 +290,9 @@ label {
       width: 9px;
       height: 2px; }
   .types-items__btn {
+    font-family: "Proxima Nova", sans-serif;
+    font-weight: 600;
+    line-height: 55px;
     position: absolute;
     bottom: 40px;
     width: 230px;
@@ -295,9 +302,8 @@ label {
     opacity: 0.8;
     color: #000000;
     font-size: 13px;
-    font-weight: 400;
     text-transform: uppercase;
-    top: 595px; }
+    bottom: 40px; }
     .types-items__btn:hover {
       cursor: pointer;
       background-color: #23bac1;
@@ -330,16 +336,18 @@ label {
       padding-bottom: 25px;
       margin: 0; }
     .projects-info__btn {
+      font-family: "Proxima Nova", sans-serif;
+      font-weight: 600;
+      line-height: 60px;
       width: 216px;
       height: 60px;
       background-color: #23bac1;
       color: #ffffff;
       font-size: 13px;
-      font-weight: 400;
       text-transform: uppercase;
       letter-spacing: 0.33px;
       text-decoration: none;
-      margin-top: 60px;
+      margin-top: 55px;
       outline: none;
       border: 0;
       opacity: 0.7; }
@@ -500,7 +508,8 @@ label {
   top: 0;
   z-index: 99; }
   .modal_visible {
-    display: flex; }
+    display: flex;
+    align-items: flex-start; }
   .modal_hidden {
     display: none; }
   .modal__dialog {
@@ -510,8 +519,7 @@ label {
     display: flex;
     justify-content: center;
     position: relative;
-    overflow-y: auto;
-    height: calc(100% - 80px); }
+    overflow-y: auto; }
   .modal__close {
     position: absolute;
     top: 10px;
@@ -524,14 +532,11 @@ label {
     padding-top: 59px;
     margin-bottom: 76px; }
     .modal-form__input {
-      width: 370px;
-      height: 65px;
-      width: 370px;
+      height: 50px;
       margin-bottom: 15px;
       outline: none; }
     .modal-form__button {
       margin-top: 15px;
-      width: 368px;
       margin-bottom: 33px; }
     .modal-form__phone {
       font-size: 24px;
@@ -724,6 +729,8 @@ body {
     .types-items__wrap {
       flex-direction: column;
       align-items: center; }
+    .types-items__img {
+      filter: none; }
   .types-subtitle {
     text-align: center;
     font-size: 18px;
@@ -734,7 +741,7 @@ body {
     align-items: center; }
 
   .projects-img {
-    width: 70%; }
+    width: 95%; }
   .projects-info {
     width: 70%;
     display: flex;
@@ -755,7 +762,8 @@ body {
     line-height: 29px; }
 
   .modal__dialog {
-    width: 80%; }
+    width: 80%;
+    height: calc(100% - 80px); }
   .modal-form {
     padding-top: 15px; }
     .modal-form__txt {
