@@ -12,13 +12,14 @@
         display: none
     
     &__dialog
-        margin: auto
+        margin: 60px auto 20px
         width: 60%
-        height: 674px
         background-color: #fff
         display: flex
         justify-content: center
         position: relative
+        overflow-y: auto
+        height: calc(100% - 80px)
     &__close
         position: absolute
         top: 10px
@@ -49,6 +50,7 @@
             margin-bottom: 76px
         &__descr
             text-align: center
+            padding-bottom: 20px
         &__txt
             padding-bottom: 13px
         &_phone
